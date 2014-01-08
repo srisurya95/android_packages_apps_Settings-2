@@ -61,4 +61,8 @@
     <!-- Profiles FAB -->
     <color name="floating_action_button_touch_tint">#80ffffff</color>
 
+    <!-- Screen color -->
+    <color name="screencolor_background">#50000000</color>
+    <drawable name="transparent_background">#00000000</drawable>
+
 </resources>
