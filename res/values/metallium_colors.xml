@@ -57,4 +57,8 @@
 
     <!-- Multi-sim Edit Name Text Color -->
     <color name="msim_edit_name_text_color">@android:color/black</color>
+
+    <!-- Profiles FAB -->
+    <color name="floating_action_button_touch_tint">#80ffffff</color>
+
 </resources>
