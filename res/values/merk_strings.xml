@@ -17,8 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
      <!--PA Version-->
-     <string name="pa_version">MerkMod Version</string>
-     <string name="pa_version_default">Unknown</string>
+     <string name="merk_version">MerkMod Version</string>
+     <string name="merk_version_default">Unknown</string>
 
     <!-- Hardware Key Binding-->
     <string name="button_pref_title">Buttons</string>

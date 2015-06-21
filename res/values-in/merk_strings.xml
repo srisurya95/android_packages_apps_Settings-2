@@ -17,8 +17,8 @@
    limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="pa_version">Versi ParanoidAndroid</string>
-  <string name="pa_version_default">Tidak diketahui</string>
+  <string name="merk_version">Versi MerkMod</string>
+  <string name="merk_version_default">Tidak diketahui</string>
   <string name="button_pref_title">Tombol</string>
   <string name="hardware_keys_home_key_title">Tombol utama</string>
   <string name="hardware_keys_menu_key_title">Tombol menu</string>

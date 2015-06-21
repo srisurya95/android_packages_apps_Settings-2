@@ -17,8 +17,8 @@
    limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="pa_version">Версия ParanoidAndroid</string>
-  <string name="pa_version_default">Неизвестна</string>
+  <string name="merk_version">Версия MerkMod</string>
+  <string name="merk_version_default">Неизвестна</string>
   <string name="button_pref_title">Кнопки</string>
   <string name="hardware_keys_home_key_title">Кнопка Домой</string>
   <string name="hardware_keys_menu_key_title">Кнопка Меню</string>
