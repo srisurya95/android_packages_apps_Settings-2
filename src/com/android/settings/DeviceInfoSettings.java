@@ -215,7 +215,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setClassName("android",
-                        com.android.internal.app.PAWorldActivity.class.getName());
+                        com.android.internal.app.MerkPlatLogo.class.getName());
                 try {
                     startActivity(intent);
                 } catch (Exception e) {
