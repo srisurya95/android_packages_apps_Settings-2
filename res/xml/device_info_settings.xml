@@ -115,11 +115,11 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- Device Merk version -->
-        <Preference android:key="merk_version"
+        <!-- Device Metallium version -->
+        <Preference android:key="metallium_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/merk_version"
-                android:summary="@string/merk_version_default" />
+                android:title="@string/metallium_version"
+                android:summary="@string/metallium_version_default" />
 
         <!-- Device FCC equipment id -->
         <Preference android:key="fcc_equipment_id"

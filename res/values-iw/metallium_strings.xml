@@ -17,8 +17,8 @@
    limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="merk_version">גירסת MerkMod</string>
-  <string name="merk_version_default">לא ידוע</string>
+  <string name="metallium_version">Metallium OS</string>
+  <string name="metallium_version_default">לא ידוע</string>
   <string name="button_pref_title">לחצנים</string>
   <string name="hardware_keys_home_key_title">לחצן \"בית\"</string>
   <string name="hardware_keys_menu_key_title">לחצן \"תפריט\"</string>

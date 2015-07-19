@@ -17,8 +17,8 @@
    limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="merk_version">Versione MerkMod</string>
-  <string name="merk_version_default">Sconosciuta</string>
+  <string name="metallium_version">Metallium OS</string>
+  <string name="metallium_version_default">Sconosciuta</string>
   <string name="button_pref_title">Pulsanti</string>
   <string name="hardware_keys_home_key_title">Pulsante Home</string>
   <string name="hardware_keys_menu_key_title">Pulsante menu</string>

@@ -81,7 +81,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
-    private static final String KEY_MERK_VERSION = "merk_version";
+    private static final String KEY_METALLIUM_VERSION = "metallium_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
@@ -104,8 +104,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
-        findPreference(KEY_MERK_VERSION).setEnabled(true);
-        setValueSummary(KEY_MERK_VERSION, "ro.merk.version");
+        findPreference(KEY_METALLIUM_VERSION).setEnabled(true);
+        setValueSummary(KEY_METALLIUM_VERSION, "ro.metallium.version");
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
         if (!SELinux.isSELinuxEnabled()) {
@@ -209,13 +209,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
                 }
             }
-        } else if (preference.getKey().equals(KEY_MERK_VERSION)) {
+        } else if (preference.getKey().equals(KEY_METALLIUM_VERSION)) {
             System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
             mHits[mHits.length-1] = SystemClock.uptimeMillis();
             if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setClassName("android",
-                        com.android.internal.app.MerkPlatLogo.class.getName());
+                        com.android.internal.app.MetalliumPlatLogo.class.getName());
                 try {
                     startActivity(intent);
                 } catch (Exception e) {

@@ -17,8 +17,8 @@
    limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="merk_version">Wersja MerkMod</string>
-  <string name="merk_version_default">Nieznany</string>
+  <string name="metallium_version">Metallium OS</string>
+  <string name="metallium_version_default">Nieznany</string>
   <string name="button_pref_title">Przyciski</string>
   <string name="hardware_keys_home_key_title">Przycisk Home</string>
   <string name="hardware_keys_menu_key_title">Przycisk menu</string>
