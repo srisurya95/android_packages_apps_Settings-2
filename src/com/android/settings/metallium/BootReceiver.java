@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.metallium;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

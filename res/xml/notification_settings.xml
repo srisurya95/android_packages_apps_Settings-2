@@ -85,7 +85,7 @@
                 android:ringtoneType="notification" />
 
         <!-- Headset -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.android.settings.metallium.SystemSettingSwitchPreference
                 android:key="headset_connect_player"
                 android:title="@string/headset_connect_player_title"
                 android:summary="@string/headset_connect_player_summary"
