@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.paranoid;
+package com.android.settings.metallium;
 
 import android.content.Context;
 import android.preference.CheckBoxPreference;

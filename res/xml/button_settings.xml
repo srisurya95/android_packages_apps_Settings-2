@@ -23,7 +23,7 @@
         android:summary="@string/disable_navkeys_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.paranoid.backlight.ButtonBacklightBrightness
+    <com.android.settings.metallium.backlight.ButtonBacklightBrightness
         android:key="button_backlight"
         android:title="@string/button_backlight_title"
         android:dialogTitle="@string/button_backlight_title"

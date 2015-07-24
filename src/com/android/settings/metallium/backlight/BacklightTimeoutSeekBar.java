@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.paranoid.backlight;
+package com.android.settings.metallium.backlight;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

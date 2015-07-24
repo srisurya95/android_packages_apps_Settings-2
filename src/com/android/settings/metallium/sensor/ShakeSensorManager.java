@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.paranoid.sensor;
+package com.android.settings.metallium.sensor;
 
 import android.content.Context;
 import android.hardware.Sensor;

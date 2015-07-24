@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.paranoid.backlight;
+package com.android.settings.metallium.backlight;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;

@@ -53,7 +53,7 @@
         />
 
     <PreferenceScreen
-        android:fragment="com.android.settings.paranoid.StatusBarClockStyle"
+        android:fragment="com.android.settings.metallium.StatusBarClockStyle"
         android:key="clock_style_pref"
         android:summary="@string/status_bar_clock_summary"
         android:title="@string/status_bar_clock" />

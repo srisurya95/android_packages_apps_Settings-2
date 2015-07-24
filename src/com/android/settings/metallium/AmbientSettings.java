@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.android.settings.paranoid;
+package com.android.settings.metallium;
 
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -42,8 +42,8 @@ import android.widget.Button;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.paranoid.SystemCheckBoxPreference;
-import com.android.settings.paranoid.sensor.ShakeSensorManager;
+import com.android.settings.metallium.SystemCheckBoxPreference;
+import com.android.settings.metallium.sensor.ShakeSensorManager;
 
 import java.util.ArrayList;
 import java.util.List;

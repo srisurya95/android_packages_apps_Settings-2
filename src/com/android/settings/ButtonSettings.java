@@ -42,7 +42,7 @@ import android.view.WindowManagerGlobal;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.paranoid.backlight.ButtonBacklightBrightness;
+import com.android.settings.metallium.backlight.ButtonBacklightBrightness;
 
 import org.cyanogenmod.hardware.KeyDisabler;
 

@@ -61,7 +61,7 @@
             android:layout_alignParentEnd="true"
             android:paddingStart="10dip"
             android:paddingEnd="24dip" />
-        <com.android.settings.paranoid.backlight.BacklightTimeoutSeekBar
+        <com.android.settings.metallium.backlight.BacklightTimeoutSeekBar
             android:id="@+id/timeout_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
