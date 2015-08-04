@@ -385,4 +385,8 @@
 
     <string name="usb_not_connected">USB is now disconnected</string>
 
+    <!-- No interuptions except alarms -->
+    <string name="zen_mode_none_category">No interruptions</string>
+    <string name="zen_mode_alarms">Allow alarms</string>
+ 
 </resources>
