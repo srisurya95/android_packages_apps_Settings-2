@@ -84,6 +84,17 @@
                 android:persistent="false"
                 android:ringtoneType="notification" />
 
+        <!-- Ringtone Maker -->
+        <Preference
+                android:key="ringtone_maker"
+                android:title="@string/custom_ringtone_title"
+		android:persistent="false">
+        <intent
+             android:action="android.intent.action.VIEW"
+             android:targetPackage="com.android.settings"
+             android:targetClass="com.android.settings.metallium.ringtones.RingtoneMakerSelectActivity" /> 
+	</Preference>
+
         <!-- Headset -->
         <com.android.settings.metallium.SystemSettingSwitchPreference
                 android:key="headset_connect_player"
