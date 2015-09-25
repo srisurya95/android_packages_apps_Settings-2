@@ -29,6 +29,7 @@ public class SongMetadataReader {
     public Activity mActivity = null;
     public String mFilename = "";
     public String mTitle = "";
+    public String mArtist = "";
     public String mGenre = "";
 
     SongMetadataReader(Activity activity, String filename) {
@@ -83,6 +84,7 @@ public class SongMetadataReader {
             null, null);
         if (c.getCount() == 0) {
             mTitle = getBasename(mFilename);
+            mArtist = "";
             return;
         }
         c.moveToFirst();
@@ -90,6 +92,7 @@ public class SongMetadataReader {
         if (mTitle == null || mTitle.length() == 0) {
             mTitle = getBasename(mFilename);
         }
+        mArtist = getStringFromColumn(c, MediaStore.Audio.Media.ARTIST);
         c.close();
     }
 

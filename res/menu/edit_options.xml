@@ -6,7 +6,7 @@
           android:showAsAction="always|withText" />
 
     <item android:id="@+id/action_reset"
-          android:title="@string/menu_reset"
+          android:icon="@drawable/ic_settings_reset"
           android:showAsAction="ifRoom" />
     
 </menu>

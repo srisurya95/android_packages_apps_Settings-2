@@ -674,6 +674,8 @@
 
     <string name="ringtone_name_label">Name:</string>
 
+    <string name="artist_name">Ringtone Maker</string>
+
     <!--
      Delete confirmation dialog
      -->

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2008 Google Inc.
+ * The code is modified to work in Metallium - OS project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,7 +44,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.SearchView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
@@ -59,7 +59,6 @@ public class RingtoneMakerSelectActivity
     extends ListActivity
     implements LoaderManager.LoaderCallbacks<Cursor>
 {
-    private SearchView mFilter;
     private SimpleCursorAdapter mAdapter;
     private boolean mWasGetContentIntent;
     private boolean mShowAll;
@@ -193,10 +192,32 @@ public class RingtoneMakerSelectActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        
+        inflater.inflate(R.menu.select_options, menu);
+
         return true;
     }
-    
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+
+        menu.findItem(R.id.action_show_all_audio).setVisible(true);
+        menu.findItem(R.id.action_show_all_audio).setEnabled(!mShowAll);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case R.id.action_show_all_audio:
+            mShowAll = true;
+            refreshListView();
+            return true;
+        default:
+            return false;
+        }
+    }
+
     @Override
     public void onCreateContextMenu(ContextMenu menu,
             View v,
@@ -321,6 +342,18 @@ public class RingtoneMakerSelectActivity
         String artist = c.getString(c.getColumnIndexOrThrow(
                 MediaStore.Audio.Media.ARTIST));
 
+        CharSequence ringtoneMakerArtist =
+            getResources().getText(R.string.artist_name);
+
+        CharSequence message;
+        if (artist.equals(ringtoneMakerArtist)) {
+            message = getResources().getText(
+                    R.string.confirm_delete);
+        } else {
+            message = getResources().getText(
+                    R.string.confirm_delete_non);
+        }
+
         CharSequence title;
         if (0 != c.getInt(c.getColumnIndexOrThrow(
                 MediaStore.Audio.Media.IS_RINGTONE))) {
@@ -413,7 +446,6 @@ public class RingtoneMakerSelectActivity
         mInternalCursor = null;
         mExternalCursor = null;
         Bundle args = new Bundle();
-        args.putString("filter", mFilter.getQuery().toString());
         getLoaderManager().restartLoader(INTERNAL_CURSOR_ID,  args, this);
         getLoaderManager().restartLoader(EXTERNAL_CURSOR_ID,  args, this);
     }
@@ -422,6 +454,7 @@ public class RingtoneMakerSelectActivity
         MediaStore.Audio.Media._ID,
         MediaStore.Audio.Media.DATA,
         MediaStore.Audio.Media.TITLE,
+        MediaStore.Audio.Media.ARTIST,
         MediaStore.Audio.Media.IS_RINGTONE,
         MediaStore.Audio.Media.IS_ALARM,
         MediaStore.Audio.Media.IS_NOTIFICATION,
@@ -433,6 +466,7 @@ public class RingtoneMakerSelectActivity
         MediaStore.Audio.Media._ID,
         MediaStore.Audio.Media.DATA,
         MediaStore.Audio.Media.TITLE,
+        MediaStore.Audio.Media.ARTIST,
         MediaStore.Audio.Media.IS_RINGTONE,
         MediaStore.Audio.Media.IS_ALARM,
         MediaStore.Audio.Media.IS_NOTIFICATION,

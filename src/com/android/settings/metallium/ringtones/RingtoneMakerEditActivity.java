@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2008 Google Inc.
- * Part of the code is copyright to Metallium - OS Project.
+ * Part of the code is copyright to Metallium - OS Project 2015.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -564,6 +564,7 @@ public class RingtoneMakerEditActivity extends Activity
         SongMetadataReader metadataReader = new SongMetadataReader(
             this, mFilename);
         mTitle = metadataReader.mTitle;
+        mArtist = metadataReader.mArtist;
 
         String titleLabel = mTitle;
         if (mArtist != null && mArtist.length() > 0) {
@@ -1235,6 +1236,8 @@ public class RingtoneMakerEditActivity extends Activity
             // This should never happen.
             mimeType = "audio/mpeg";
         }
+
+        String artist = "" + getResources().getText(R.string.artist_name);
 
         ContentValues values = new ContentValues();
         values.put(MediaStore.MediaColumns.DATA, outPath);
