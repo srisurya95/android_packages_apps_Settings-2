@@ -685,8 +685,7 @@
     <string name="delete_audio">Delete Audio</string>
 
     <string name="confirm_delete">Are you sure?</string>
-    <string name="confirm_delete_non"
-    >Are you sure?  This file was not created using the Editor!</string>
+    <string name="confirm_delete_non">Are you sure?  This file was not created using the Editor!</string>
 
     <string name="delete_ok_button">Delete</string>
     <string name="delete_cancel_button">Cancel</string>
